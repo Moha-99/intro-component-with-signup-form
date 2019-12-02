@@ -1,0 +1,205 @@
+/*--- General ---*/
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url("../images/bg-intro-desktop.png") hsl(0, 100%, 74%);
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+/*--- Container ---*/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/*--- Learn Code Section ---*/
+#learn-code {
+  margin-top: 8%;
+  color: #fff;
+  text-align: left;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.learn-header {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.learn-text {
+  width: 95%;
+}
+
+/*--- Subscribe Section ---*/
+#subscribe {
+  margin-top: 10%;
+}
+
+.bread-crumb {
+  padding: 2px 20px;
+  color: #fff;
+  background: hsl(248, 32%, 49%);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  text-align: center;
+  margin-top: 15px;
+  padding: 20px 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  display: block;
+  padding: 15px 245px 15px 5px;
+  border: 1px solid hsla(246, 25%, 77%, 0.6);
+  border-radius: 6px;
+}
+
+input {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 15px 140px;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 6px;
+  background: hsl(154, 59%, 51%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.form-text {
+  font-size: 9px;
+  margin-top: 23px;
+}
+
+.form-text-red {
+  color: red;
+}
+
+/*--- Footer ---*/
+.attribution {
+  margin-top: 200px;
+  font-size: 11px;
+  color: #fff;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*--- Media Queries---*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background: url("../images/bg-intro-mobile.png") hsl(0, 100%, 74%);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #learn-code {
+    width: 100%;
+    text-align: center;
+  }
+
+  .learn-header {
+    font-size: 2.1rem;
+    font-weight: 400;
+  }
+
+  .learn-text {
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 200;
+  }
+
+  #subscribe {
+    width: 100%;
+  }
+
+  .form-control {
+    padding: 15px 90px 15px 5px;
+  }
+
+  .btn {
+    padding: 15px 60px;
+    font-weight: 100;
+    display: inline-block;
+  }
+
+  .attribution {
+    margin-top: 100px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .learn-header {
+    font-size: 2.1rem;
+    font-weight: 400;
+  }
+
+  .learn-text {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  /* .btn {
+    display: inline-block;
+    padding: 15px 130px;
+  }
+
+  #subscribe {
+    width: 90%;
+  } */
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
